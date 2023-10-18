@@ -3,10 +3,11 @@ import { Tipografia } from "../../componentes/Tipografia/Tipografia";
 import cliente from "../cadastro/assets/cliente.png"
 import freela from "../cadastro/assets/freela.png"
 import { Link } from "../../componentes/Link/Link"
+import { Link as RouterLink } from 'react-router-dom'
 
 const SelecaoCliente = () => {
  return(
-    <>
+   <div style={{ textAlign: 'center' }}>
     <Tipografia variante="h1" componente="h1">
             Crie seu cadastro
     </Tipografia>
@@ -15,10 +16,12 @@ const SelecaoCliente = () => {
     </Tipografia>
     <Row>
         <Col md={6} sm={12}>
+            <RouterLink to="interesses">
             <img src={cliente} alt="cliente"/>
             <Tipografia variante="body" componente="body">
                     Sou cliente e preciso de um freela!
                 </Tipografia>
+            </RouterLink>
         </Col>
         <Col md={6} sm={12}>
             <img src={freela} alt="freelancer"/>
@@ -27,7 +30,7 @@ const SelecaoCliente = () => {
                 </Tipografia>
         </Col>
     </Row>
-    <div style={{ textAlign: 'center' }}>
+    <div >
             <Tipografia variante="body2" componente="body2">
                 Já tem conta?
             </Tipografia>
@@ -35,7 +38,7 @@ const SelecaoCliente = () => {
                 <Link variante="secundaria">Faça login!</Link>
             </p>
         </div>
-    </>
+        </div>
  )
 }
 

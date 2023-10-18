@@ -1,8 +1,11 @@
 import { createBrowserRouter } from "react-router-dom"
-import PaginaInicial from "../paginas/PaginaInicial"
 import SelecaoCliente from "../paginas/cadastro/SelecaoCliente";
 import LayoutBaseCadastro from "../paginas/cadastro/LayoutBaseCadastro";
 import LayoutBase from "../paginas/LayoutBase";
+import Interesses from "../paginas/cadastro/Interresses";
+import DadosPessoais from "../paginas/cadastro/DadosPessoais";
+import Concluido from "../paginas/cadastro/Concluido";
+
 
 export const router = createBrowserRouter([
      {
@@ -19,16 +22,16 @@ export const router = createBrowserRouter([
                         element: <SelecaoCliente />
                     },
                     {
-                    path: 'cliente',
-                    element: <h1> Interesses </h1>
+                    path: 'interesses',
+                    element: <Interesses/>
                 },
                 {
                     path: 'dados-pessoais',
-                    element: <h1> dados pessoais </h1>
+                    element: <DadosPessoais/>
                 },
                 {
                     path: 'concluido',
-                    element: <h1> concluido </h1>
+                    element: <Concluido/>
                 }
                ]
           }
