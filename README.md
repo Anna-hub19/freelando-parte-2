@@ -8,7 +8,7 @@
 * javascript
 * React Grid System
 * GitHub
-* 
+
 ## projeto freelando, projeto feito no curso de react da Alura
 
 # link do projeto
