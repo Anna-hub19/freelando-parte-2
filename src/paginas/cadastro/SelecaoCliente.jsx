@@ -5,7 +5,10 @@ import freela from "../cadastro/assets/freela.png"
 import { Link } from "../../componentes/Link/Link"
 import { Link as RouterLink } from 'react-router-dom'
 
+
+
 const SelecaoCliente = () => {
+
  return(
    <div style={{ textAlign: 'center' }}>
     <Tipografia variante="h1" componente="h1">
